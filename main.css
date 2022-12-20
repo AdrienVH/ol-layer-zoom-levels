@@ -30,13 +30,14 @@ body, html {
 	margin-bottom: 20px;
 	padding: 10px;
 	font-size: 16px;
-	font-weight: bold;
+	font-weight: 700;
 	text-align: center;
 	background-color: #f1f3f5;
+	color: #495057;
 }
 
 #layers div.layer {
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
 
 #layers div.layer p {
@@ -68,12 +69,50 @@ body, html {
 
 #layers div.layer div.zoomBar div {
 	position: absolute;
-	top:0;
-	bottom:0;
+	top: 0;
+	bottom: 0;
 }
 
 #layers div.layer div.zoomBar div.mapCurrentZoom{
-	width: 2px;
+	width: 1px;
+	background-color: #000;
+}
+
+#layers div.layer div.zoomTicks {
+	position: relative;
+	height: 5px;
+}
+
+#layers div.layer div.zoomTicks div {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 1px;
+	background-color:#ced4da;
+}
+
+#layers div.layer div.zoomTicksLabels {
+	position: relative;
+	height: 6px;
+}
+
+#layers div.layer div.zoomTicksLabels div {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	padding-top: 2px;
+	color: #adb5bd;
+	font-size: 11px;
+}
+
+img {
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+	padding: 10px 20px 20px 20px;
+	width: 250px;
+	background-color: #fff;
+	box-shadow: 0px 0px 20px #ccc;
 }
 
 .tiptop {
@@ -83,6 +122,5 @@ body, html {
 	max-width: 360px;
 	font-size: 16px;
 	color: #fff;
-	background: rgba(0,0,0,.7);
-	border-radius: 4px;
-  }
+	background: rgba(0, 0, 0, 0.6);
+}
